@@ -19,9 +19,9 @@ export function Projects({ locale }: ProjectsProps) {
   };
 
   const projects = [
-    { id: "driverent", name: t("projects.projects.0.name"), type: t("projects.projects.0.type"), description: t("projects.projects.0.description"), status: t("projects.projects.0.status"), demo: true },
-    { id: "beauty-pro", name: t("projects.projects.1.name"), type: t("projects.projects.1.type"), description: t("projects.projects.1.description"), status: t("projects.projects.1.status"), demo: true },
-    { id: "medical-office", name: t("projects.projects.2.name"), type: t("projects.projects.2.type"), description: t("projects.projects.2.description"), status: t("projects.projects.2.status"), demo: false },
+    { id: "driverent", name: t("projects.projects.0.name"), type: t("projects.projects.0.type"), description: t("projects.projects.0.description"), status: t("projects.projects.0.status"), demo: true, image: "/driverent.jpg" },
+    { id: "beauty-pro", name: t("projects.projects.1.name"), type: t("projects.projects.1.type"), description: t("projects.projects.1.description"), status: t("projects.projects.1.status"), demo: true, image: "/capture.png" },
+    { id: "medical-office", name: t("projects.projects.2.name"), type: t("projects.projects.2.type"), description: t("projects.projects.2.description"), status: t("projects.projects.2.status"), demo: false, image: "/capture.png" },
   ];
 
   const demoLabel = t("projects.demoLabel");
@@ -61,11 +61,19 @@ export function Projects({ locale }: ProjectsProps) {
                 </div>
                 <div className="bg-charcoal relative min-h-[300px] flex items-center justify-center">
                   <div className="w-full h-full bg-gradient-to-br from-charcoal to-dark-green flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <svg className="w-16 h-16 mx-auto text-white/20 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                      <p className="text-white/40 text-lg">Capture d\'ecran {project.name}</p>
-                      <p className="text-white/20 text-sm mt-2">Interface reelle du projet</p>
-                    </div>
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={`Capture d'écran ${project.name}`}
+                        className="w-full h-full object-cover opacity-90"
+                      />
+                    ) : (
+                      <div className="text-center p-8">
+                        <svg className="w-16 h-16 mx-auto text-white/20 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        <p className="text-white/40 text-lg">Capture d'écran {project.name}</p>
+                        <p className="text-white/20 text-sm mt-2">Interface réelle du projet</p>
+                      </div>
+                    )}
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent h-16" />
                 </div>
