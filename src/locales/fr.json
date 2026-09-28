@@ -1,0 +1,385 @@
+{
+  "nav": {
+    "brand": "NexaTech",
+    "tagline": "Digitaliser pour aller plus loin",
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Réalisations",
+    "process": "Méthode",
+    "about": "À propos",
+    "contact": "Contact",
+    "cta": "Demander un devis"
+  },
+  "hero": {
+    "eyebrow": "AGENCE DE DIGITALISATION · AGADIR",
+    "headline": "Votre entreprise mérite mieux que WhatsApp + Excel.",
+    "subheadline": "Nous construisons les outils numériques qui simplifient vos opérations.",
+    "description": "Sites web, logiciels de gestion, automatisations et solutions sur mesure pour les entreprises marocaines.",
+    "primaryCta": "Découvrir nos solutions →",
+    "secondaryCta": "Voir nos réalisations",
+    "location": "Agadir · Maroc",
+    "availability": "Disponible partout au Maroc",
+    "stats": {
+      "reservations": "Réservations",
+      "vehicles": "Véhicules",
+      "revenue": "Revenus",
+      "clients": "Clients"
+    }
+  },
+  "problem": {
+    "headline": "Votre entreprise mérite mieux que WhatsApp, Excel et les papiers.",
+    "leftText": "Aujourd'hui, une réservation peut commencer sur WhatsApp, être notée dans Excel, confirmée par téléphone et finir sur un papier posé sur un bureau.",
+    "flow": {
+      "step1": "WhatsApp",
+      "step2": "Excel",
+      "step3": "Papier",
+      "step4": "Appel",
+      "step5": "Erreur / Perte d'information"
+    },
+    "solution": "Nous centralisons tout dans un seul système."
+  },
+  "services": {
+    "eyebrow": "NOS SERVICES",
+    "headline": "Nous construisons ce dont votre entreprise a réellement besoin.",
+    "featured": {
+      "number": "01",
+      "title": "Logiciels de gestion",
+      "description": "Réservations, clients, stocks, véhicules, contrats, paiements et opérations réunis dans un seul outil.",
+      "features": [
+        "Gestion des réservations",
+        "Base clients centralisée",
+        "Suivi de stock / flotte",
+        "Facturation & paiements",
+        "Tableaux de bord temps réel",
+        "Export comptable"
+      ]
+    },
+    "list": [
+      {
+        "number": "02",
+        "title": "Sites web & applications",
+        "description": "Sites vitrines, e-commerce, portails clients, applications métiers sur mesure."
+      },
+      {
+        "number": "03",
+        "title": "Automatisation",
+        "description": "Workflows automatiques, notifications WhatsApp/Email/SMS, synchronisation d'outils."
+      },
+      {
+        "number": "04",
+        "title": "CRM & Relation client",
+        "description": "Pipeline commercial, suivi prospects, historique interactions, relances automatiques."
+      },
+      {
+        "number": "05",
+        "title": "Marketing digital & SEO",
+        "description": "Référencement local, Google My Business, campagnes ciblées, analytics."
+      },
+      {
+        "number": "06",
+        "title": "Hébergement & maintenance",
+        "description": "Serveurs Maroc/France, sauvegardes, mises à jour sécurité, support technique réactif."
+      }
+    ]
+  },
+  "industries": {
+    "eyebrow": "SECTEURS",
+    "headline": "Une technologie adaptée à votre métier.",
+    "items": [
+      {
+        "id": "car-rental",
+        "title": "Location de voitures",
+        "problem": "Réservations dispersées, disponibilité difficile à suivre, contrats papier, gestion flotte complexe.",
+        "solution": "Réservations centralisées, planning véhicules, contrats numériques, paiements, maintenance, historique client."
+      },
+      {
+        "id": "beauty",
+        "title": "Beauté & esthétique",
+        "problem": "RDV par téléphone/Instagram, cahiers papier, rappels manuels, fidélisation difficile.",
+        "solution": "Réservation en ligne, calendrier partagé, rappels auto, fiches clients, programmes fidélité, caisse intégrée."
+      },
+      {
+        "id": "medical",
+        "title": "Cabinets médicaux",
+        "problem": "Agenda saturé, dossiers patients dispersés, facturation lente, conformité RGPD.",
+        "solution": "Prise de RDV en ligne, dossiers médicaux numériques, facturation auto, rappels, téléconsultation, conformité."
+      },
+      {
+        "id": "training",
+        "title": "Centres de formation",
+        "problem": "Inscriptions manuelles, suivi présences papier, planning formateurs complexe, attestations lentes.",
+        "solution": "Inscriptions en ligne, planning salles/formateurs, émargement digital, attestations auto, suivi pédagogique."
+      },
+      {
+        "id": "real-estate",
+        "title": "Agences immobilières",
+        "problem": "Biens dispersés, visites mal organisées, mandats papier, suivi acheteurs inexistant.",
+        "solution": "Portail biens, planning visites, mandats numériques, CRM acheteurs, signature électronique, diffusion portails."
+      },
+      {
+        "id": "restaurant",
+        "title": "Restaurants",
+        "problem": "Réservations téléphone uniquement, tables mal optimisées, commandes papier, stocks approximatifs.",
+        "solution": "Réservation en ligne, plan de salle, commande tablette, gestion stocks, caisse, analytics revenus."
+      },
+      {
+        "id": "retail",
+        "title": "Commerces & boutiques",
+        "problem": "Stocks inconnus, ventes non tracées, clients anonymes, réassort au feeling.",
+        "solution": "Caisse connectée, stocks temps réel, fiches clients, relances panier abandonné, multi-boutiques."
+      },
+      {
+        "id": "services",
+        "title": "Services professionnels",
+        "problem": "Devis/ factures Word, suivi chantiers Excel, planning équipe confus, relances oubliées.",
+        "solution": "Devis/factures auto, planning chantiers, gestion équipe, portail client, signature électronique, trésorerie."
+      }
+    ]
+  },
+  "flagship": {
+    "eyebrow": "PROJET PHARE",
+    "headline": "Nous construisons de vrais outils métier.",
+    "projectName": "DriveRent",
+    "tagline": "Plateforme de gestion pour agences de location de voitures",
+    "description": "Une plateforme complète conçue pour digitaliser l'ensemble des opérations d'une agence de location : de la réservation à la restitution, en passant par la gestion de flotte, la facturation et le suivi maintenance.",
+    "screens": [
+      {
+        "label": "Tableau de bord",
+        "key": "dashboard"
+      },
+      {
+        "label": "Réservations",
+        "key": "reservations"
+      },
+      {
+        "label": "Flotte",
+        "key": "fleet"
+      },
+      {
+        "label": "Clients",
+        "key": "clients"
+      },
+      {
+        "label": "Contrats",
+        "key": "contracts"
+      },
+      {
+        "label": "Maintenance",
+        "key": "maintenance"
+      }
+    ],
+    "benefits": [
+      "Centraliser les opérations",
+      "Réduire les tâches manuelles",
+      "Garder une vision claire de l'activité"
+    ],
+    "cta": "Voir le projet →"
+  },
+  "beforeAfter": {
+    "eyebrow": "TRANSFORMATION",
+    "headline": "Passez d'une gestion dispersée à un système centralisé.",
+    "before": {
+      "label": "AVANT",
+      "items": [
+        "WhatsApp pour les demandes",
+        "Excel pour le suivi",
+        "Papier pour les contrats",
+        "Appels pour confirmer",
+        "Fichiers dispersés partout"
+      ]
+    },
+    "after": {
+      "label": "APRÈS",
+      "items": [
+        "Tableau de bord unique",
+        "Base clients centralisée",
+        "Réservations en temps réel",
+        "Automatisations natives",
+        "Rapports & exports instantanés"
+      ]
+    }
+  },
+  "process": {
+    "eyebrow": "NOTRE MÉTHODE",
+    "headline": "De votre problème à votre solution.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Comprendre",
+        "description": "Nous analysons votre activité, vos processus actuels et vos vrais problèmes. Pas de solution prédéfinie."
+      },
+      {
+        "number": "02",
+        "title": "Concevoir",
+        "description": "Nous définissons les fonctionnalités utiles, l'architecture technique et l'expérience utilisateur adaptée."
+      },
+      {
+        "number": "03",
+        "title": "Construire",
+        "description": "Nous développons, testons et documentons votre solution. Itérations rapides, code propre, standards modernes."
+      },
+      {
+        "number": "04",
+        "title": "Accompagner",
+        "description": "Mise en ligne, formation équipe, support réactif, évolutions continues. La relation ne s'arrête pas au lancement."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "RÉALISATIONS",
+    "headline": "Quelques systèmes que nous construisons.",
+    "projects": [
+      {
+        "id": "driverent",
+        "name": "DriveRent",
+        "type": "Logiciel de gestion location véhicules",
+        "description": "Plateforme complète : réservations, flotte, contrats, maintenance, facturation, tableaux de bord.",
+        "status": "Production",
+        "demo": true
+      },
+      {
+        "id": "beauty-pro",
+        "name": "BeautyPro",
+        "type": "Système gestion institut/salon",
+        "description": "Réservation en ligne, caisse, fidélité, stocks, planning équipe, rappels auto WhatsApp/SMS.",
+        "status": "Production",
+        "demo": true
+      },
+      {
+        "id": "medical-office",
+        "name": "MediCabinet",
+        "type": "Logiciel cabinet médical",
+        "description": "RDV en ligne, dossiers patients, facturation, téléconsultation, conformité, rappels.",
+        "status": "Développement",
+        "demo": false
+      }
+    ],
+    "demoLabel": "PROJET DÉMO"
+  },
+  "whyUs": {
+    "eyebrow": "POURQUOI NOUS",
+    "headline": "La technologie doit s'adapter à votre entreprise. Pas l'inverse.",
+    "points": [
+      {
+        "title": "Comprendre avant de développer",
+        "description": "Nous prenons le temps d'analyser comment votre entreprise fonctionne vraiment avant d'écrire la première ligne de code."
+      },
+      {
+        "title": "Construire seulement ce qui est utile",
+        "description": "Pas de fonctionnalités superflues. Chaque écran, chaque bouton, chaque automatisation a un but métier précis."
+      },
+      {
+        "title": "Accompagner après la mise en ligne",
+        "description": "Formation, support, corrections, évolutions. Nous restons disponibles tant que l'outil sert votre activité."
+      },
+      {
+        "title": "Pensé pour le contexte marocain",
+        "description": "Français, arabe, WhatsApp, Dirham, workflows locaux, réalités terrain. Pas une solution importée, une solution d'ici."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "TÉMOIGNAGES",
+    "headline": "Votre entreprise pourrait être notre prochain projet.",
+    "cta": "Parler de mon projet →"
+  },
+  "cta": {
+    "headline": "Quel processus de votre entreprise vous fait perdre le plus de temps ?",
+    "description": "Expliquez-nous votre activité. Nous vous montrerons ce qui peut être digitalisé ou automatisé.",
+    "primaryCta": "Parler de mon projet →",
+    "secondaryCta": "WhatsApp",
+    "whatsappNumber": "+212 6 79 84 43 25"
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "headline": "Parlons de votre projet.",
+    "description": "Remplissez ce formulaire. Nous vous recontactons sous 24h pour échanger sur vos besoins.",
+    "form": {
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "company": "Entreprise",
+      "companyPlaceholder": "Nom de votre entreprise",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+212 6 79 84 43 25",
+      "email": "Email",
+      "emailPlaceholder": "vous@entreprise.ma",
+      "sector": "Secteur d'activité",
+      "sectorPlaceholder": "Sélectionnez votre secteur",
+      "need": "Votre besoin principal",
+      "needPlaceholder": "Décrivez ce que vous souhaitez digitaliser...",
+      "budget": "Budget estimé",
+      "budgetOptions": {
+        "under2k": "Moins de 2 000 DH",
+        "2k-5k": "2 000 – 5 000 DH",
+        "5k-10k": "5 000 – 10 000 DH",
+        "10kplus": "10 000+ DH",
+        "unknown": "Je ne sais pas encore"
+      },
+      "message": "Message (optionnel)",
+      "messagePlaceholder": "Détails supplémentaires, contraintes, délais...",
+      "budgetHelp": "Vous n'avez pas encore défini votre budget ? Aucun problème, nous en discuterons.",
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi en cours...",
+      "success": "Merci ! Nous vous recontactons très vite.",
+      "error": "Une erreur est survenue. Réessayez ou contactez-nous directement.",
+      "privacy": "Vos données ne sont jamais partagées. Consultez notre politique de confidentialité."
+    }
+  },
+  "footer": {
+    "brand": "NexaTech",
+    "tagline": "Digitaliser pour aller plus loin.",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Accueil",
+      "services": "Services",
+      "projects": "Réalisations",
+      "process": "Méthode",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "management": "Logiciels de gestion",
+      "web": "Sites web & apps",
+      "automation": "Automatisation",
+      "crm": "CRM",
+      "marketing": "Marketing digital",
+      "hosting": "Hébergement & maintenance"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Agadir, Souss-Massa, Maroc",
+      "phone": "+212 6 79 84 43 25",
+      "email": "nextadigit@gmail.com",
+      "availability": "Lun–Ven · 9h–18h"
+    },
+    "languages": {
+      "title": "Langues",
+      "fr": "Français",
+      "ar": "العربية",
+      "en": "English"
+    },
+    "copyright": "© 2026 NexaTech. Tous droits réservés.",
+    "legal": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "retry": "Réessayer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "readMore": "En savoir plus",
+    "viewProject": "Voir le projet",
+    "demo": "Démonstration",
+    "production": "En production",
+    "development": "En développement",
+    "industry": "Secteur",
+    "status": "Statut"
+  }
+}

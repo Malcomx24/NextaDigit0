@@ -1,0 +1,385 @@
+{
+  "nav": {
+    "brand": "NexaTech",
+    "tagline": "Digitalize to go further",
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "process": "Process",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Get a Quote"
+  },
+  "hero": {
+    "eyebrow": "DIGITALIZATION AGENCY · AGADIR",
+    "headline": "Your business deserves better than WhatsApp + Excel.",
+    "subheadline": "We build the digital tools that simplify your operations.",
+    "description": "Websites, management software, automations and custom solutions for Moroccan businesses.",
+    "primaryCta": "Discover our solutions →",
+    "secondaryCta": "View our projects",
+    "location": "Agadir · Morocco",
+    "availability": "Available throughout Morocco",
+    "stats": {
+      "reservations": "Bookings",
+      "vehicles": "Vehicles",
+      "revenue": "Revenue",
+      "clients": "Clients"
+    }
+  },
+  "problem": {
+    "headline": "Your business deserves better than WhatsApp, Excel and paper.",
+    "leftText": "Today, a booking can start on WhatsApp, be noted in Excel, confirmed by phone and end up on a paper left on a desk.",
+    "flow": {
+      "step1": "WhatsApp",
+      "step2": "Excel",
+      "step3": "Paper",
+      "step4": "Phone call",
+      "step5": "Error / Lost information"
+    },
+    "solution": "We centralize everything in a single system."
+  },
+  "services": {
+    "eyebrow": "OUR SERVICES",
+    "headline": "We build what your business actually needs.",
+    "featured": {
+      "number": "01",
+      "title": "Management Software",
+      "description": "Bookings, clients, inventory, vehicles, contracts, payments and operations in one tool.",
+      "features": [
+        "Booking management",
+        "Centralized client base",
+        "Inventory / fleet tracking",
+        "Invoicing & payments",
+        "Real-time dashboards",
+        "Accounting export"
+      ]
+    },
+    "list": [
+      {
+        "number": "02",
+        "title": "Websites & Applications",
+        "description": "Showcase sites, e-commerce, client portals, custom business applications."
+      },
+      {
+        "number": "03",
+        "title": "Automation",
+        "description": "Automated workflows, WhatsApp/Email/SMS notifications, tool synchronization."
+      },
+      {
+        "number": "04",
+        "title": "CRM & Client Relations",
+        "description": "Sales pipeline, prospect tracking, interaction history, automated follow-ups."
+      },
+      {
+        "number": "05",
+        "title": "Digital Marketing & SEO",
+        "description": "Local SEO, Google My Business, targeted campaigns, analytics."
+      },
+      {
+        "number": "06",
+        "title": "Hosting & Maintenance",
+        "description": "Morocco/France servers, backups, security updates, responsive technical support."
+      }
+    ]
+  },
+  "industries": {
+    "eyebrow": "INDUSTRIES",
+    "headline": "Technology adapted to your trade.",
+    "items": [
+      {
+        "id": "car-rental",
+        "title": "Car Rental",
+        "problem": "Scattered bookings, hard to track availability, paper contracts, complex fleet management.",
+        "solution": "Centralized bookings, vehicle scheduling, digital contracts, payments, maintenance, client history."
+      },
+      {
+        "id": "beauty",
+        "title": "Beauty & Aesthetics",
+        "problem": "Appointments by phone/Instagram, paper notebooks, manual reminders, difficult loyalty.",
+        "solution": "Online booking, shared calendar, auto reminders, client files, loyalty programs, integrated POS."
+      },
+      {
+        "id": "medical",
+        "title": "Medical Practices",
+        "problem": "Overbooked schedule, scattered patient files, slow billing, GDPR compliance.",
+        "solution": "Online appointments, digital medical records, auto billing, reminders, teleconsultation, compliance."
+      },
+      {
+        "id": "training",
+        "title": "Training Centers",
+        "problem": "Manual registrations, paper attendance, complex trainer scheduling, slow certificates.",
+        "solution": "Online registrations, room/trainer scheduling, digital attendance, auto certificates, pedagogical tracking."
+      },
+      {
+        "id": "real-estate",
+        "title": "Real Estate Agencies",
+        "problem": "Scattered properties, poorly organized visits, paper mandates, non-existent buyer tracking.",
+        "solution": "Property portal, visit scheduling, digital mandates, buyer CRM, e-signature, portal distribution."
+      },
+      {
+        "id": "restaurant",
+        "title": "Restaurants",
+        "problem": "Phone-only bookings, poorly optimized tables, paper orders, approximate inventory.",
+        "solution": "Online booking, floor plan, tablet ordering, inventory management, POS, revenue analytics."
+      },
+      {
+        "id": "retail",
+        "title": "Retail & Shops",
+        "problem": "Unknown inventory, untracked sales, anonymous clients, guesswork restocking.",
+        "solution": "Connected POS, real-time inventory, client files, abandoned cart recovery, multi-location."
+      },
+      {
+        "id": "services",
+        "title": "Professional Services",
+        "problem": "Word quotes/invoices, Excel site tracking, confused team scheduling, forgotten follow-ups.",
+        "solution": "Auto quotes/invoices, site planning, team management, client portal, e-signature, cash flow."
+      }
+    ]
+  },
+  "flagship": {
+    "eyebrow": "FLAGSHIP PROJECT",
+    "headline": "We build real business tools.",
+    "projectName": "DriveRent",
+    "tagline": "Management platform for car rental agencies",
+    "description": "A complete platform designed to digitalize all operations of a rental agency: from booking to return, including fleet management, billing and maintenance tracking.",
+    "screens": [
+      {
+        "label": "Dashboard",
+        "key": "dashboard"
+      },
+      {
+        "label": "Bookings",
+        "key": "reservations"
+      },
+      {
+        "label": "Fleet",
+        "key": "fleet"
+      },
+      {
+        "label": "Clients",
+        "key": "clients"
+      },
+      {
+        "label": "Contracts",
+        "key": "contracts"
+      },
+      {
+        "label": "Maintenance",
+        "key": "maintenance"
+      }
+    ],
+    "benefits": [
+      "Centralize operations",
+      "Reduce manual tasks",
+      "Keep a clear view of activity"
+    ],
+    "cta": "View project →"
+  },
+  "beforeAfter": {
+    "eyebrow": "TRANSFORMATION",
+    "headline": "Move from scattered management to a centralized system.",
+    "before": {
+      "label": "BEFORE",
+      "items": [
+        "WhatsApp for requests",
+        "Excel for tracking",
+        "Paper for contracts",
+        "Calls to confirm",
+        "Files scattered everywhere"
+      ]
+    },
+    "after": {
+      "label": "AFTER",
+      "items": [
+        "Single dashboard",
+        "Centralized client base",
+        "Real-time bookings",
+        "Native automations",
+        "Instant reports & exports"
+      ]
+    }
+  },
+  "process": {
+    "eyebrow": "OUR METHOD",
+    "headline": "From your problem to your solution.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Understand",
+        "description": "We analyze your business, current processes and real problems. No pre-defined solutions."
+      },
+      {
+        "number": "02",
+        "title": "Design",
+        "description": "We define useful features, technical architecture and adapted user experience."
+      },
+      {
+        "number": "03",
+        "title": "Build",
+        "description": "We develop, test and document your solution. Fast iterations, clean code, modern standards."
+      },
+      {
+        "number": "04",
+        "title": "Support",
+        "description": "Launch, team training, responsive support, continuous improvements. The relationship doesn't end at launch."
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "PROJECTS",
+    "headline": "Some systems we build.",
+    "projects": [
+      {
+        "id": "driverent",
+        "name": "DriveRent",
+        "type": "Vehicle Rental Management Software",
+        "description": "Complete platform: bookings, fleet, contracts, maintenance, billing, dashboards.",
+        "status": "Production",
+        "demo": true
+      },
+      {
+        "id": "beauty-pro",
+        "name": "BeautyPro",
+        "type": "Institute/Salon Management System",
+        "description": "Online booking, POS, loyalty, inventory, team scheduling, auto WhatsApp/SMS reminders.",
+        "status": "Production",
+        "demo": true
+      },
+      {
+        "id": "medical-office",
+        "name": "MediCabinet",
+        "type": "Medical Practice Software",
+        "description": "Online appointments, patient records, billing, teleconsultation, compliance, reminders.",
+        "status": "Development",
+        "demo": false
+      }
+    ],
+    "demoLabel": "DEMO PROJECT"
+  },
+  "whyUs": {
+    "eyebrow": "WHY US",
+    "headline": "Technology should adapt to your business. Not the other way around.",
+    "points": [
+      {
+        "title": "Understand before building",
+        "description": "We take time to analyze how your business actually works before writing the first line of code."
+      },
+      {
+        "title": "Build only what is useful",
+        "description": "No unnecessary features. Every screen, button, automation has a precise business purpose."
+      },
+      {
+        "title": "Support after launch",
+        "description": "Training, support, fixes, improvements. We stay available as long as the tool serves your business."
+      },
+      {
+        "title": "Designed for the Moroccan context",
+        "description": "French, Arabic, WhatsApp, Dirham, local workflows, field realities. Not an imported solution, a solution from here."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "TESTIMONIALS",
+    "headline": "Your business could be our next project.",
+    "cta": "Talk about my project →"
+  },
+  "cta": {
+    "headline": "Which process in your business wastes the most time?",
+    "description": "Tell us about your business. We'll show you what can be digitalized or automated.",
+    "primaryCta": "Talk about my project →",
+    "secondaryCta": "WhatsApp",
+    "whatsappNumber": "+212 6 79 84 43 25"
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "headline": "Let's talk about your project.",
+    "description": "Fill out this form. We'll get back to you within 24h to discuss your needs.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "phone": "Phone",
+      "phonePlaceholder": "+212 6 79 84 43 25",
+      "email": "Email",
+      "emailPlaceholder": "you@company.ma",
+      "sector": "Industry",
+      "sectorPlaceholder": "Select your industry",
+      "need": "Your main need",
+      "needPlaceholder": "Describe what you want to digitalize...",
+      "budget": "Estimated Budget",
+      "budgetOptions": {
+        "under2k": "Less than 2,000 MAD",
+        "2k-5k": "2,000 – 5,000 MAD",
+        "5k-10k": "5,000 – 10,000 MAD",
+        "10kplus": "10,000+ MAD",
+        "unknown": "I don't know yet"
+      },
+      "message": "Message (optional)",
+      "messagePlaceholder": "Additional details, constraints, deadlines...",
+      "budgetHelp": "Haven't defined your budget yet? No problem, we'll discuss it.",
+      "submit": "Send my request",
+      "submitting": "Sending...",
+      "success": "Thanks! We'll get back to you soon.",
+      "error": "An error occurred. Try again or contact us directly.",
+      "privacy": "Your data is never shared. See our privacy policy."
+    }
+  },
+  "footer": {
+    "brand": "NexaTech",
+    "tagline": "Digitalize to go further.",
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "services": "Services",
+      "projects": "Projects",
+      "process": "Process",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "management": "Management Software",
+      "web": "Websites & Apps",
+      "automation": "Automation",
+      "crm": "CRM",
+      "marketing": "Digital Marketing",
+      "hosting": "Hosting & Maintenance"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Agadir, Souss-Massa, Morocco",
+      "phone": "+212 6 79 84 43 25",
+      "email": "nextadigit@gmail.com",
+      "availability": "Mon–Fri · 9am–6pm"
+    },
+    "languages": {
+      "title": "Languages",
+      "fr": "Français",
+      "ar": "العربية",
+      "en": "English"
+    },
+    "copyright": "© 2026 NexaTech. All rights reserved.",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "readMore": "Read more",
+    "viewProject": "View project",
+    "demo": "Demo",
+    "production": "Production",
+    "development": "Development",
+    "industry": "Industry",
+    "status": "Status"
+  }
+}

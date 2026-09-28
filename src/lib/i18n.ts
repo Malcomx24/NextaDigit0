@@ -1,0 +1,29 @@
+﻿export const locales = ["fr", "ar", "en"] as const;
+export type Locale = (typeof locales)[number];
+export const defaultLocale: Locale = "fr";
+
+export const localeNames: Record<Locale, string> = {
+  fr: "Français",
+  ar: "العربية",
+  en: "English",
+};
+
+export const localeDirections: Record<Locale, "ltr" | "rtl"> = {
+  fr: "ltr",
+  ar: "rtl",
+  en: "ltr",
+};
+
+export const localeFlags: Record<Locale, string> = {
+  fr: "🇫🇷",
+  ar: "🇲🇦",
+  en: "🇬🇧",
+};
+
+export function isValidLocale(locale: string): locale is Locale {
+  return locales.includes(locale as Locale);
+}
+
+export function getDirection(locale: Locale): "ltr" | "rtl" {
+  return localeDirections[locale];
+}
