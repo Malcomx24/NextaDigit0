@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
 import "@/app/globals.css";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { getDictionary } from "@/lib/translations";
+import { isValidLocale } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: {
@@ -83,27 +79,17 @@ export default async function RootLayout({
 }: LayoutProps) {
   const resolvedParams = await params;
   const locale = resolvedParams.locale;
-  const direction = locale === "ar" ? "rtl" : "ltr";
-  const lang = locale === "ar" ? "ar" : locale === "en" ? "en" : "fr";
+  const validLocale = isValidLocale(locale) ? locale : "fr";
+  
+  // Load dictionary on the server for initial render
+  const dict = await getDictionary(validLocale);
 
   return (
-    <html lang={lang} dir={direction} className={`${geistSans.variable} h-full antialiased`}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="min-h-full flex flex-col bg-white text-charcoal safe-area-inset-bottom">
-        <LocaleProvider locale={locale as "fr" | "ar" | "en"}>
-          <Navbar locale={locale} />
-          <main className="flex-1">{children}</main>
-          <Footer locale={locale} />
-          <WhatsAppFloat locale={locale} />
-        </LocaleProvider>
-      </body>
-    </html>
+    <LocaleProvider locale={validLocale} initialDict={dict}>
+      <Navbar locale={validLocale} />
+      <main className="flex-1">{children}</main>
+      <Footer locale={validLocale} />
+      <WhatsAppFloat locale={validLocale} />
+    </LocaleProvider>
   );
 }

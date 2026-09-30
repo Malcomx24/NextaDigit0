@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
-import { locales, type Locale, defaultLocale, getDirection } from "@/lib/i18n";
+import { type Locale, getDirection } from "@/lib/i18n";
 import { getDictionary } from "@/lib/translations";
 
 type LocaleContextType = {
@@ -9,26 +9,31 @@ type LocaleContextType = {
   setLocale: (locale: Locale) => void;
   direction: "ltr" | "rtl";
   dict: Record<string, unknown>;
-  isLoading: boolean;
 };
 
 const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
 
-export function LocaleProvider({ children, locale: initialLocale }: { children: ReactNode; locale: Locale }) {
+interface LocaleProviderProps {
+  children: ReactNode;
+  locale: Locale;
+  initialDict: Record<string, unknown>;
+}
+
+export function LocaleProvider({ children, locale: initialLocale, initialDict }: LocaleProviderProps) {
   const [locale, setLocaleState] = useState<Locale>(initialLocale);
-  const [dict, setDict] = useState<Record<string, unknown>>({});
-  const [isLoading, setIsLoading] = useState(true);
+  const [dict, setDict] = useState<Record<string, unknown>>(initialDict);
   const direction = getDirection(locale);
 
+  // Only fetch dictionary when locale changes (client-side navigation)
   useEffect(() => {
-    async function loadDictionary() {
-      setIsLoading(true);
-      const dictionary = await getDictionary(locale);
-      setDict(dictionary);
-      setIsLoading(false);
+    if (locale !== initialLocale) {
+      async function loadDictionary() {
+        const dictionary = await getDictionary(locale);
+        setDict(dictionary);
+      }
+      loadDictionary();
     }
-    loadDictionary();
-  }, [locale]);
+  }, [locale, initialLocale]);
 
   const setLocale = (newLocale: Locale) => {
     setLocaleState(newLocale);
@@ -37,7 +42,7 @@ export function LocaleProvider({ children, locale: initialLocale }: { children: 
   };
 
   return (
-    <LocaleContext.Provider value={{ locale, setLocale, direction, dict, isLoading }}>
+    <LocaleContext.Provider value={{ locale, setLocale, direction, dict }}>
       {children}
     </LocaleContext.Provider>
   );

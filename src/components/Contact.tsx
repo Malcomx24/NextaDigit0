@@ -118,19 +118,19 @@ export function Contact({ locale }: ContactProps) {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-light-bg rounded-xl border border-border p-6 md:p-8" noValidate>
+          <form onSubmit={handleSubmit} className="bg-light-bg rounded-xl border border-border p-4 md:p-6 md:p-8" noValidate>
             {status === "success" && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800" role="alert">
+              <div className="mb-4 md:mb-6 p-3 md:p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm" role="alert">
                 {t("contact.form.success")}
               </div>
             )}
             {status === "error" && (
-              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800" role="alert">
+              <div className="mb-4 md:mb-6 p-3 md:p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm" role="alert">
                 {t("contact.form.error")}
               </div>
             )}
 
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-2">{t("contact.form.name")}</label>
                 <input
@@ -141,7 +141,7 @@ export function Contact({ locale }: ContactProps) {
                   onChange={handleChange}
                   required
                   placeholder={t("contact.form.namePlaceholder")}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all"
+                  className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all min-h-[48px]"
                 />
               </div>
               <div>
@@ -153,12 +153,12 @@ export function Contact({ locale }: ContactProps) {
                   value={formData.company}
                   onChange={handleChange}
                   placeholder={t("contact.form.companyPlaceholder")}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all"
+                  className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all min-h-[48px]"
                 />
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-charcoal mb-2">{t("contact.form.phone")}</label>
                 <input
@@ -169,7 +169,7 @@ export function Contact({ locale }: ContactProps) {
                   onChange={handleChange}
                   required
                   placeholder={t("contact.form.phonePlaceholder")}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all"
+                  className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all min-h-[48px]"
                 />
               </div>
               <div>
@@ -182,19 +182,20 @@ export function Contact({ locale }: ContactProps) {
                   onChange={handleChange}
                   required
                   placeholder={t("contact.form.emailPlaceholder")}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all"
+                  className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all min-h-[48px]"
                 />
               </div>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label htmlFor="sector" className="block text-sm font-medium text-charcoal mb-2">{t("contact.form.sector")}</label>
               <select
                 id="sector"
                 name="sector"
                 value={formData.sector}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all appearance-none"
+                className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all appearance-none bg-no-repeat bg-right pr-10 min-h-[48px]"
+                style={{ backgroundImage: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e\")", backgroundSize: "1.5rem 1.5rem" }}
               >
                 {sectors.map((s) => (
                   <option key={s.value} value={s.value}>{s.label}</option>
@@ -202,7 +203,7 @@ export function Contact({ locale }: ContactProps) {
               </select>
             </div>
 
-            <div className="mb-6">
+            <div className="mb-4 md:mb-6">
               <label htmlFor="need" className="block text-sm font-medium text-charcoal mb-2">{t("contact.form.need")}</label>
               <textarea
                 id="need"
@@ -212,11 +213,11 @@ export function Contact({ locale }: ContactProps) {
                 required
                 rows={4}
                 placeholder={t("contact.form.needPlaceholder")}
-                className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all resize-none min-h-[120px]"
               />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6">
               <div>
                 <label htmlFor="budget" className="block text-sm font-medium text-charcoal mb-2">{t("contact.form.budget")}</label>
                 <select
@@ -224,7 +225,8 @@ export function Contact({ locale }: ContactProps) {
                   name="budget"
                   value={formData.budget}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all appearance-none"
+                  className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all appearance-none bg-no-repeat bg-right pr-10 min-h-[48px]"
+                  style={{ backgroundImage: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e\")", backgroundSize: "1.5rem 1.5rem" }}
                 >
                   {budgetOptions.map((b) => (
                     <option key={b.value} value={b.value}>{b.label}</option>
@@ -240,7 +242,7 @@ export function Contact({ locale }: ContactProps) {
                   onChange={handleChange}
                   rows={4}
                   placeholder={t("contact.form.messagePlaceholder")}
-                  className="w-full px-4 py-3 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3.5 border border-border rounded-lg bg-white text-charcoal placeholder:text-secondary-text/50 focus:outline-none focus:ring-2 focus:ring-accent-green focus:border-transparent transition-all resize-none min-h-[120px]"
                 />
               </div>
             </div>

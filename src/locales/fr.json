@@ -8,7 +8,8 @@
     "process": "Méthode",
     "about": "À propos",
     "contact": "Contact",
-    "cta": "Demander un devis"
+    "cta": "Demander un devis",
+    "language": "Langue"
   },
   "hero": {
     "eyebrow": "AGENCE DE DIGITALISATION · AGADIR",
@@ -85,6 +86,7 @@
   "industries": {
     "eyebrow": "SECTEURS",
     "headline": "Une technologie adaptée à votre métier.",
+    "selectLabel": "Choisir un secteur",
     "items": [
       {
         "id": "car-rental",
@@ -142,6 +144,7 @@
     "projectName": "DriveRent",
     "tagline": "Plateforme de gestion pour agences de location de voitures",
     "description": "Une plateforme complète conçue pour digitaliser l'ensemble des opérations d'une agence de location : de la réservation à la restitution, en passant par la gestion de flotte, la facturation et le suivi maintenance.",
+    "screensAriaLabel": "Écrans DriveRent",
     "screens": [
       {
         "label": "Tableau de bord",
@@ -173,6 +176,40 @@
       "Réduire les tâches manuelles",
       "Garder une vision claire de l'activité"
     ],
+    "stats": [
+      {
+        "label": "Réservations",
+        "value": "24",
+        "change": "+3 aujourd'hui"
+      },
+      {
+        "label": "Véhicules dispo",
+        "value": "12",
+        "change": "18 en flotte"
+      },
+      {
+        "label": "Revenus (mois)",
+        "value": "48.7K DH",
+        "change": "+12%"
+      },
+      {
+        "label": "Clients actifs",
+        "value": "156",
+        "change": "+5 nouveaux"
+      }
+    ],
+    "recentReservations": "Réservations récentes",
+    "updated": "Mis à jour il y a 2 min",
+    "table": {
+      "reservation": "Réservation",
+      "client": "Client",
+      "vehicle": "Véhicule",
+      "period": "Période",
+      "status": "Statut",
+      "amount": "Montant"
+    },
+    "revenueChart": "Revenus (9 derniers mois)",
+    "recentActivity": "Activité récente",
     "cta": "Voir le projet →"
   },
   "beforeAfter": {
@@ -281,6 +318,7 @@
   "testimonials": {
     "eyebrow": "TÉMOIGNAGES",
     "headline": "Votre entreprise pourrait être notre prochain projet.",
+    "description": "Chaque projet commence par une conversation. La vôtre pourrait être la prochaine histoire que nous racontons.",
     "cta": "Parler de mon projet →"
   },
   "cta": {
@@ -364,6 +402,64 @@
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
+  },
+  "privacy": {
+    "intro": "Dernière mise à jour : Janvier 2026. NexaTech (\"nous\", \"notre\", \"nos\") s'engage à protéger votre vie privée. Cette politique explique comment nous collectons, utilisons et protégeons vos informations lorsque vous visitez notre site web.",
+    "controller": "1. Responsable du traitement",
+    "controller_text": "NexaTech, Agadir, Souss-Massa, Maroc\nEmail : nextadigit@gmail.com\nTéléphone : +212 6 79 84 43 25",
+    "data": "2. Données collectées",
+    "data_form": "Données du formulaire de contact",
+    "data_form_text": "Lorsque vous remplissez notre formulaire de contact, nous collectons : votre nom, votre entreprise, votre téléphone, votre email, votre secteur d'activité, votre besoin principal, votre budget estimé et votre message.",
+    "data_auto": "Données automatiques",
+    "data_auto_text": "Lors de votre navigation, nous collectons automatiquement : adresse IP, type de navigateur, système d'exploitation, pages visitées, durée de visite, référent.",
+    "purpose": "3. Finalités du traitement",
+    "purpose_text": "Nous utilisons vos données pour :",
+    "purpose_1": "Répondre à vos demandes de contact et de devis",
+    "purpose_2": "Vous envoyer des informations sur nos services",
+    "purpose_3": "Améliorer notre site et nos services",
+    "purpose_4": "Assurer la sécurité de notre site",
+    "purpose_5": "Respecter nos obligations légales",
+    "legal_basis": "4. Base légale",
+    "legal_basis_text": "Le traitement repose sur : votre consentement (formulaire de contact), notre intérêt légitime (amélioration du site, sécurité), et nos obligations légales.",
+    "retention": "5. Durée de conservation",
+    "retention_text": "Données du formulaire : conservées 3 ans après le dernier contact. Données de navigation : conservées 13 mois maximum. Vous pouvez demander la suppression à tout moment.",
+    "sharing": "6. Partage des données",
+    "sharing_text": "Vos données ne sont jamais vendues. Elles peuvent être partagées avec : nos sous-traitants techniques (hébergement, email) sous contrat de confidentialité, et les autorités si la loi l'exige.",
+    "rights": "7. Vos droits",
+    "rights_text": "Conformément à la loi marocaine et au RGPD, vous disposez des droits d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition. Pour les exercer : nextadigit@gmail.com",
+    "cookies": "8. Cookies",
+    "cookies_text": "Notre site utilise des cookies techniques indispensables et des cookies d'analyse (avec votre consentement). Vous pouvez les gérer via les paramètres de votre navigateur.",
+    "security": "9. Sécurité",
+    "security_text": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, perte ou divulgation.",
+    "modifications": "10. Modifications",
+    "modifications_text": "Cette politique peut être modifiée à tout moment. Les changements sont effectifs dès leur publication. Nous vous informerons des modifications majeures.",
+    "contact": "11. Contact",
+    "contact_text": "Pour toute question sur cette politique ou vos données : nextadigit@gmail.com ou +212 6 79 84 43 25."
+  },
+  "terms": {
+    "intro": "Dernière mise à jour : Janvier 2026. Bienvenue sur le site de NexaTech. En accédant à ce site, vous acceptez d'être lié par les présentes conditions d'utilisation.",
+    "acceptance": "1. Acceptation des conditions",
+    "acceptance_text": "En accédant et en utilisant ce site web, vous acceptez d'être lié par les présentes conditions d'utilisation et de vous conformer à toutes les lois et réglementations applicables. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site.",
+    "ip": "2. Propriété intellectuelle",
+    "ip_text": "Tout le contenu de ce site (textes, graphiques, logos, images, logiciels) est la propriété de NexaTech ou de ses concédants de licence et est protégé par les lois sur la propriété intellectuelle. Toute reproduction, distribution, modification ou utilisation non autorisée est interdite.",
+    "use": "3. Utilisation du site",
+    "use_text": "Vous vous engagez à utiliser ce site uniquement à des fins licites et conformément aux présentes conditions. Il vous est interdit de :",
+    "use_1": "Tenter d'accéder sans autorisation à nos systèmes ou réseaux",
+    "use_2": "Introduire des virus, malwares ou tout code nuisible",
+    "use_3": "Collecter des données d'utilisateurs sans consentement",
+    "use_4": "Utiliser le site pour des activités illégales ou frauduleuses",
+    "services": "4. Services et devis",
+    "services_text": "Les informations présentées sur ce site concernant nos services sont fournies à titre indicatif. Les devis et propositions commerciales sont soumis à validation et ne constituent pas une offre contractuelle ferme. Les prix et conditions peuvent varier selon la complexité du projet.",
+    "limitation": "5. Limitation de responsabilité",
+    "limitation_text": "NexaTech s'efforce d'assurer l'exactitude des informations sur ce site, mais ne garantit pas l'exhaustivité, l'exactitude ou l'actualité du contenu. Nous ne saurions être tenus responsables des dommages directs ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser ce site.",
+    "links": "6. Liens vers des tiers",
+    "links_text": "Ce site peut contenir des liens vers des sites web tiers. Ces liens sont fournis pour votre commodité. NexaTech n'a aucun contrôle sur le contenu de ces sites et décline toute responsabilité quant à leur contenu, leur exactitude ou leurs pratiques de confidentialité.",
+    "modifications": "7. Modifications des conditions",
+    "modifications_text": "NexaTech se réserve le droit de modifier ces conditions à tout moment. Les modifications prennent effet dès leur publication sur cette page. Votre utilisation continue du site après modification constitue votre acceptation des nouvelles conditions.",
+    "law": "8. Droit applicable",
+    "law_text": "Ces conditions sont régies par le droit marocain. Tout litige relatif à l'utilisation de ce site sera soumis à la juridiction exclusive des tribunaux d'Agadir, Maroc.",
+    "contact": "9. Contact",
+    "contact_text": "Pour toute question concernant ces conditions d'utilisation, veuillez nous contacter à : nextadigit@gmail.com ou au +212 6 79 84 43 25."
   },
   "common": {
     "loading": "Chargement...",

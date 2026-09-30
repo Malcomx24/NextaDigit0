@@ -8,7 +8,8 @@
     "process": "Process",
     "about": "About",
     "contact": "Contact",
-    "cta": "Get a Quote"
+    "cta": "Get a Quote",
+    "language": "Language"
   },
   "hero": {
     "eyebrow": "DIGITALIZATION AGENCY · AGADIR",
@@ -85,6 +86,7 @@
   "industries": {
     "eyebrow": "INDUSTRIES",
     "headline": "Technology adapted to your trade.",
+    "selectLabel": "Select Industry",
     "items": [
       {
         "id": "car-rental",
@@ -142,6 +144,7 @@
     "projectName": "DriveRent",
     "tagline": "Management platform for car rental agencies",
     "description": "A complete platform designed to digitalize all operations of a rental agency: from booking to return, including fleet management, billing and maintenance tracking.",
+    "screensAriaLabel": "DriveRent Screens",
     "screens": [
       {
         "label": "Dashboard",
@@ -173,6 +176,40 @@
       "Reduce manual tasks",
       "Keep a clear view of activity"
     ],
+    "stats": [
+      {
+        "label": "Reservations",
+        "value": "24",
+        "change": "+3 today"
+      },
+      {
+        "label": "Vehicles avail.",
+        "value": "12",
+        "change": "18 in fleet"
+      },
+      {
+        "label": "Revenue (month)",
+        "value": "48.7K DH",
+        "change": "+12%"
+      },
+      {
+        "label": "Active clients",
+        "value": "156",
+        "change": "+5 new"
+      }
+    ],
+    "recentReservations": "Recent bookings",
+    "updated": "Updated 2 min ago",
+    "table": {
+      "reservation": "Booking",
+      "client": "Client",
+      "vehicle": "Vehicle",
+      "period": "Period",
+      "status": "Status",
+      "amount": "Amount"
+    },
+    "revenueChart": "Revenue (9 months)",
+    "recentActivity": "Recent activity",
     "cta": "View project →"
   },
   "beforeAfter": {
@@ -281,6 +318,7 @@
   "testimonials": {
     "eyebrow": "TESTIMONIALS",
     "headline": "Your business could be our next project.",
+    "description": "Every project starts with a conversation. Yours could be the next story we tell.",
     "cta": "Talk about my project →"
   },
   "cta": {
@@ -364,6 +402,139 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"
     }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "readMore": "Read more",
+    "viewProject": "View project",
+    "demo": "Demo",
+    "production": "Production",
+    "development": "Development",
+    "industry": "Industry",
+    "status": "Status"
+  },
+  "privacy": {
+    "intro": "Last updated: January 2026. NexaTech (\"we\", \"our\", \"us\") is committed to protecting your privacy. This policy explains how we collect, use, and protect your information when you visit our website.",
+    "controller": "1. Data Controller",
+    "controller_text": "NexaTech, Agadir, Souss-Massa, Morocco\nEmail: nextadigit@gmail.com\nPhone: +212 6 79 84 43 25",
+    "data": "2. Data Collected",
+    "data_form": "Contact Form Data",
+    "data_form_text": "When you fill out our contact form, we collect: your name, company, phone, email, industry, main need, estimated budget, and message.",
+    "data_auto": "Automatic Data",
+    "data_auto_text": "During your navigation, we automatically collect: IP address, browser type, operating system, pages visited, visit duration, referrer.",
+    "purpose": "3. Purposes of Processing",
+    "purpose_text": "We use your data to:",
+    "purpose_1": "Respond to your contact and quote requests",
+    "purpose_2": "Send you information about our services",
+    "purpose_3": "Improve our website and services",
+    "purpose_4": "Ensure the security of our website",
+    "purpose_5": "Comply with our legal obligations",
+    "legal_basis": "4. Legal Basis",
+    "legal_basis_text": "Processing is based on: your consent (contact form), our legitimate interest (site improvement, security), and legal obligations.",
+    "retention": "5. Retention Period",
+    "retention_text": "Form data: retained for 3 years after last contact. Navigation data: retained for 13 months maximum. You may request deletion at any time.",
+    "sharing": "6. Data Sharing",
+    "sharing_text": "Your data is never sold. It may be shared with: our technical subcontractors (hosting, email) under confidentiality agreements, and authorities when required by law.",
+    "rights": "7. Your Rights",
+    "rights_text": "In accordance with Moroccan law and GDPR, you have the rights to access, rectify, erase, restrict, port, and object. To exercise them: nextadigit@gmail.com",
+    "cookies": "8. Cookies",
+    "cookies_text": "Our site uses essential technical cookies and analytics cookies (with your consent). You can manage them via your browser settings.",
+    "security": "9. Security",
+    "security_text": "We implement appropriate technical and organizational measures to protect your data against unauthorized access, loss, or disclosure.",
+    "modifications": "10. Modifications",
+    "modifications_text": "This policy may be modified at any time. Changes are effective upon publication. We will notify you of major changes.",
+    "contact": "11. Contact",
+    "contact_text": "For any questions about this policy or your data: nextadigit@gmail.com or +212 6 79 84 43 25."
+  },
+  "terms": {
+    "intro": "Last updated: January 2026. Welcome to the NexaTech website. By accessing this site, you agree to be bound by these terms of use.",
+    "acceptance": "1. Acceptance of Terms",
+    "acceptance_text": "By accessing and using this website, you agree to be bound by these terms of use and to comply with all applicable laws and regulations. If you do not agree to these terms, please do not use this site.",
+    "ip": "2. Intellectual Property",
+    "ip_text": "All content on this site (text, graphics, logos, images, software) is the property of NexaTech or its licensors and is protected by intellectual property laws. Any unauthorized reproduction, distribution, modification, or use is prohibited.",
+    "use": "3. Use of Site",
+    "use_text": "You agree to use this site only for lawful purposes and in accordance with these terms. You are prohibited from:",
+    "use_1": "Attempting unauthorized access to our systems or networks",
+    "use_2": "Introducing viruses, malware, or any harmful code",
+    "use_3": "Collecting user data without consent",
+    "use_4": "Using the site for illegal or fraudulent activities",
+    "services": "4. Services and Quotes",
+    "services_text": "Information on this site regarding our services is provided for informational purposes only. Quotes and commercial proposals are subject to validation and do not constitute a firm contractual offer. Prices and terms may vary based on project complexity.",
+    "limitation": "5. Limitation of Liability",
+    "limitation_text": "NexaTech strives to ensure the accuracy of information on this site, but does not guarantee completeness, accuracy, or timeliness of content. We shall not be liable for any direct or indirect damages resulting from the use or inability to use this site.",
+    "links": "6. Third-Party Links",
+    "links_text": "This site may contain links to third-party websites. These links are provided for your convenience. NexaTech has no control over the content of these sites and disclaims all responsibility for their content, accuracy, or privacy practices.",
+    "modifications": "7. Modifications to Terms",
+    "modifications_text": "NexaTech reserves the right to modify these terms at any time. Modifications take effect upon publication on this page. Your continued use of the site after modification constitutes acceptance of the new terms.",
+    "law": "8. Governing Law",
+    "law_text": "These terms are governed by Moroccan law. Any dispute relating to the use of this site shall be subject to the exclusive jurisdiction of the courts of Agadir, Morocco.",
+    "contact": "9. Contact",
+    "contact_text": "For any questions regarding these terms of use, please contact us at: nextadigit@gmail.com or +212 6 79 84 43 25."
+  },
+  "privacy": {
+    "intro": "Last updated: January 2026. NexaTech (\"we\", \"our\", \"us\") is committed to protecting your privacy. This policy explains how we collect, use, and protect your information when you visit our website.",
+    "controller": "1. Data Controller",
+    "controller_text": "NexaTech, Agadir, Souss-Massa, Morocco\nEmail: nextadigit@gmail.com\nPhone: +212 6 79 84 43 25",
+    "data": "2. Data Collected",
+    "data_form": "Contact Form Data",
+    "data_form_text": "When you fill out our contact form, we collect: your name, company, phone, email, industry, main need, estimated budget, and message.",
+    "data_auto": "Automatic Data",
+    "data_auto_text": "During your navigation, we automatically collect: IP address, browser type, operating system, pages visited, visit duration, referrer.",
+    "purpose": "3. Purposes of Processing",
+    "purpose_text": "We use your data to:",
+    "purpose_1": "Respond to your contact and quote requests",
+    "purpose_2": "Send you information about our services",
+    "purpose_3": "Improve our website and services",
+    "purpose_4": "Ensure the security of our website",
+    "purpose_5": "Comply with our legal obligations",
+    "legal_basis": "4. Legal Basis",
+    "legal_basis_text": "Processing is based on: your consent (contact form), our legitimate interest (site improvement, security), and legal obligations.",
+    "retention": "5. Retention Period",
+    "retention_text": "Form data: retained for 3 years after last contact. Navigation data: retained for 13 months maximum. You may request deletion at any time.",
+    "sharing": "6. Data Sharing",
+    "sharing_text": "Your data is never sold. It may be shared with: our technical subcontractors (hosting, email) under confidentiality agreements, and authorities when required by law.",
+    "rights": "7. Your Rights",
+    "rights_text": "In accordance with Moroccan law and GDPR, you have the rights to access, rectify, erase, restrict, port, and object. To exercise them: nextadigit@gmail.com",
+    "cookies": "8. Cookies",
+    "cookies_text": "Our site uses essential technical cookies and analytics cookies (with your consent). You can manage them via your browser settings.",
+    "security": "9. Security",
+    "security_text": "We implement appropriate technical and organizational measures to protect your data against unauthorized access, loss, or disclosure.",
+    "modifications": "10. Modifications",
+    "modifications_text": "This policy may be modified at any time. Changes are effective upon publication. We will notify you of major changes.",
+    "contact": "11. Contact",
+    "contact_text": "For any questions about this policy or your data: nextadigit@gmail.com or +212 6 79 84 43 25."
+  },
+  "terms": {
+    "intro": "Last updated: January 2026. Welcome to the NexaTech website. By accessing this site, you agree to be bound by these terms of use.",
+    "acceptance": "1. Acceptance of Terms",
+    "acceptance_text": "By accessing and using this website, you agree to be bound by these terms of use and to comply with all applicable laws and regulations. If you do not agree to these terms, please do not use this site.",
+    "ip": "2. Intellectual Property",
+    "ip_text": "All content on this site (text, graphics, logos, images, software) is the property of NexaTech or its licensors and is protected by intellectual property laws. Any unauthorized reproduction, distribution, modification, or use is prohibited.",
+    "use": "3. Use of Site",
+    "use_text": "You agree to use this site only for lawful purposes and in accordance with these terms. You are prohibited from:",
+    "use_1": "Attempting unauthorized access to our systems or networks",
+    "use_2": "Introducing viruses, malware, or any harmful code",
+    "use_3": "Collecting user data without consent",
+    "use_4": "Using the site for illegal or fraudulent activities",
+    "services": "4. Services and Quotes",
+    "services_text": "Information on this site regarding our services is provided for informational purposes only. Quotes and commercial proposals are subject to validation and do not constitute a firm contractual offer. Prices and terms may vary based on project complexity.",
+    "limitation": "5. Limitation of Liability",
+    "limitation_text": "NexaTech strives to ensure the accuracy of information on this site, but does not guarantee completeness, accuracy, or timeliness of content. We shall not be liable for any direct or indirect damages resulting from the use or inability to use this site.",
+    "links": "6. Third-Party Links",
+    "links_text": "This site may contain links to third-party websites. These links are provided for your convenience. NexaTech has no control over the content of these sites and disclaims all responsibility for their content, accuracy, or privacy practices.",
+    "modifications": "7. Modifications to Terms",
+    "modifications_text": "NexaTech reserves the right to modify these terms at any time. Modifications take effect upon publication on this page. Your continued use of the site after modification constitutes acceptance of the new terms.",
+    "law": "8. Governing Law",
+    "law_text": "These terms are governed by Moroccan law. Any dispute relating to the use of this site shall be subject to the exclusive jurisdiction of the courts of Agadir, Morocco.",
+    "contact": "9. Contact",
+    "contact_text": "For any questions regarding these terms of use, please contact us at: nextadigit@gmail.com or +212 6 79 84 43 25."
   },
   "common": {
     "loading": "Loading...",

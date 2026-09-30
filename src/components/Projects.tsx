@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale } from "@/components/LocaleProvider";
+import Image from "next/image";
 
 interface ProjectsProps {
   locale: string;
@@ -20,8 +21,8 @@ export function Projects({ locale }: ProjectsProps) {
 
   const projects = [
     { id: "driverent", name: t("projects.projects.0.name"), type: t("projects.projects.0.type"), description: t("projects.projects.0.description"), status: t("projects.projects.0.status"), demo: true, image: "/driverent.jpg" },
-    { id: "beauty-pro", name: t("projects.projects.1.name"), type: t("projects.projects.1.type"), description: t("projects.projects.1.description"), status: t("projects.projects.1.status"), demo: true, image: "/capture.png" },
-    { id: "medical-office", name: t("projects.projects.2.name"), type: t("projects.projects.2.type"), description: t("projects.projects.2.description"), status: t("projects.projects.2.status"), demo: false, image: "/capture.png" },
+    { id: "beauty-pro", name: t("projects.projects.1.name"), type: t("projects.projects.1.type"), description: t("projects.projects.1.description"), status: t("projects.projects.1.status"), demo: true, image: "/Capture.PNG" },
+    { id: "medical-office", name: t("projects.projects.2.name"), type: t("projects.projects.2.type"), description: t("projects.projects.2.description"), status: t("projects.projects.2.status"), demo: false, image: "/Capture.PNG" },
   ];
 
   const demoLabel = t("projects.demoLabel");
@@ -59,23 +60,26 @@ export function Projects({ locale }: ProjectsProps) {
                     <span className="px-3 py-1 bg-light-bg text-secondary-text text-sm rounded-lg">Multi-utilisateurs</span>
                   </div>
                 </div>
-                <div className="bg-charcoal relative min-h-[300px] flex items-center justify-center">
-                  <div className="w-full h-full bg-gradient-to-br from-charcoal to-dark-green flex items-center justify-center">
+                <div className="bg-charcoal relative min-h-[200px] md:min-h-[300px] flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-charcoal to-dark-green flex items-center justify-center relative">
                     {project.image ? (
-                      <img
+                      <Image
                         src={project.image}
                         alt={`Capture d'écran ${project.name}`}
-                        className="w-full h-full object-cover opacity-90"
+                        fill
+                        className="object-cover opacity-90"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        priority={i === 0}
                       />
                     ) : (
-                      <div className="text-center p-8">
-                        <svg className="w-16 h-16 mx-auto text-white/20 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-                        <p className="text-white/40 text-lg">Capture d'écran {project.name}</p>
-                        <p className="text-white/20 text-sm mt-2">Interface réelle du projet</p>
+                      <div className="text-center p-6 md:p-8">
+                        <svg className="w-12 h-12 md:w-16 md:h-16 mx-auto text-white/20 mb-3 md:mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        <p className="text-white/40 text-base md:text-lg">Capture d'écran {project.name}</p>
+                        <p className="text-white/20 text-sm mt-1 md:mt-2">Interface réelle du projet</p>
                       </div>
                     )}
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent h-16" />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-charcoal to-transparent h-12 md:h-16" />
                 </div>
               </div>
               <div className="px-8 py-6 bg-white/50 border-t border-border">

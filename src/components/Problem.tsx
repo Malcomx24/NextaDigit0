@@ -50,21 +50,21 @@ export function Problem({ locale }: ProblemProps) {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             {flowSteps.map((step, i) => (
-              <div key={i} className="flex items-center gap-4 p-4 bg-light-bg rounded-xl border border-border transition-all hover:border-accent-green/30">
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-white border border-border flex items-center justify-center text-charcoal/60">
+              <div key={i} className="flex items-center gap-3 md:gap-4 p-3 md:p-4 bg-light-bg rounded-xl border border-border transition-all hover:border-accent-green/30">
+                <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-lg bg-white border border-border flex items-center justify-center text-charcoal/60">
                   {icons[step.icon]}
                 </div>
-                <div className="flex-1">
-                  <p className="font-medium text-charcoal">{step.label}</p>
-                  <p className="text-sm text-secondary-text">
+                <div className="flex-1 min-w-0">
+                  <p className="font-medium text-charcoal text-sm md:text-base">{step.label}</p>
+                  <p className="text-sm text-secondary-text truncate">
                     {i < flowSteps.length - 1 && "→ Prochaine étape : " + flowSteps[i + 1].label}
                   </p>
                 </div>
                 {i < flowSteps.length - 1 && (
                   <div className="flex-shrink-0 text-accent-green">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                    <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                   </div>
                 )}
               </div>

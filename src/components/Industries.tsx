@@ -66,51 +66,68 @@ export function Industries({ locale }: IndustriesProps) {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-          <div className="lg:col-span-1">
-            <div className="sticky top-24 space-y-3">
-              {industries.map((industry) => (
-                <button
-                  key={industry.id}
-                  onClick={() => setSelectedIndustry(industry.id)}
-                  className={`w-full text-left px-5 py-4 rounded-xl border transition-all duration-200 flex items-center gap-4 ${getButtonClass(industry.id)}`}
-                  role="tab"
-                  aria-selected={selectedIndustry === industry.id}
-                  aria-controls={"industry-" + industry.id}
+        <div className="space-y-8 lg:space-y-0">
+            <div className="lg:col-span-1">
+              <div className="sticky top-24 space-y-3 hidden lg:block">
+                {industries.map((industry) => (
+                  <button
+                    key={industry.id}
+                    onClick={() => setSelectedIndustry(industry.id)}
+                    className={`w-full text-left px-5 py-4 rounded-xl border transition-all duration-200 flex items-center gap-4 ${getButtonClass(industry.id)}`}
+                    role="tab"
+                    aria-selected={selectedIndustry === industry.id}
+                    aria-controls={"industry-" + industry.id}
+                  >
+                    <span className="flex-shrink-0 w-10 h-10 rounded-lg bg-light-bg flex items-center justify-center text-charcoal">
+                      {getIcon(industry.id)}
+                    </span>
+                    <span className="font-medium">{industry.title}</span>
+                  </button>
+                ))}
+              </div>
+              <div className="lg:hidden">
+                <label htmlFor="industry-select" className="block text-sm font-medium text-charcoal/70 mb-1.5">{t("industries.selectLabel")}</label>
+                <select
+                  id="industry-select"
+                  value={selectedIndustry}
+                  onChange={(e) => setSelectedIndustry(e.target.value)}
+                  className="w-full px-4 py-3 border border-border rounded-lg bg-white text-sm text-charcoal focus:outline-none focus:ring-2 focus:ring-accent-green min-h-[48px] appearance-none bg-no-repeat bg-right pr-10"
+                  style={{ backgroundImage: "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e\")", backgroundSize: "1.5rem 1.5rem" }}
+                  aria-label={t("industries.selectLabel")}
                 >
-                  <span className="flex-shrink-0 w-10 h-10 rounded-lg bg-light-bg flex items-center justify-center text-charcoal">
-                    {getIcon(industry.id)}
-                  </span>
-                  <span className="font-medium">{industry.title}</span>
-                </button>
-              ))}
+                  {industries.map((industry) => (
+                    <option key={industry.id} value={industry.id}>
+                      {industry.title}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
-          </div>
 
-          <div className="lg:col-span-2" role="tabpanel" id={"industry-" + selectedIndustry} aria-labelledby={selectedIndustry}>
-            <div className="bg-white border border-border rounded-xl p-6 md:p-8">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-xl bg-light-mint flex items-center justify-center text-accent-green">
+            <div className="lg:col-span-2" role="tabpanel" id={"industry-" + selectedIndustry} aria-labelledby={selectedIndustry}>
+            <div className="bg-white border border-border rounded-xl p-4 md:p-6 md:p-8">
+              <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
+                <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-light-mint flex items-center justify-center text-accent-green flex-shrink-0">
                   {getIcon(selectedIndustry)}
                 </div>
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-charcoal">{current.title}</h3>
-                  <p className="text-secondary-text mt-1">Secteur d\'activité</p>
+                  <h3 className="text-xl md:text-2xl md:text-3xl font-bold text-charcoal">{current.title}</h3>
+                  <p className="text-secondary-text mt-1 text-sm">Secteur d\'activité</p>
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="p-6 bg-charcoal/5 rounded-xl border border-border-dark/50">
-                  <h4 className="text-sm font-semibold uppercase tracking-wider text-charcoal/60 mb-3">Le problème</h4>
-                  <p className="text-secondary-text leading-relaxed">{current.problem}</p>
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8">
+                <div className="p-4 md:p-6 bg-charcoal/5 rounded-xl border border-border-dark/50">
+                  <h4 className="text-sm font-semibold uppercase tracking-wider text-charcoal/60 mb-2 md:mb-3">Le problème</h4>
+                  <p className="text-secondary-text leading-relaxed text-sm md:text-base">{current.problem}</p>
                 </div>
-                <div className="p-6 bg-accent-green/5 rounded-xl border border-accent-green/20">
-                  <h4 className="text-sm font-semibold uppercase tracking-wider text-accent-green mb-3">La solution</h4>
-                  <p className="text-charcoal leading-relaxed">{current.solution}</p>
+                <div className="p-4 md:p-6 bg-accent-green/5 rounded-xl border border-accent-green/20">
+                  <h4 className="text-sm font-semibold uppercase tracking-wider text-accent-green mb-2 md:mb-3">La solution</h4>
+                  <p className="text-charcoal leading-relaxed text-sm md:text-base">{current.solution}</p>
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-border">
+              <div className="mt-6 md:mt-8 pt-6 md:pt-8 border-t border-border">
                 <p className="text-sm text-secondary-text">
                   Vous êtes dans ce secteur ? <a href="#contact" className="text-accent-green font-medium hover:underline">Parlons de votre projet</a>
                 </p>

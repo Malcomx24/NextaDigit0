@@ -22,36 +22,26 @@ export function Footer({ locale }: FooterProps) {
 
   const navLinks = [
     { href: "/", label: t("footer.navigation.home") },
-    { href: "/services", label: t("footer.navigation.services") },
     { href: "/projects", label: t("footer.navigation.projects") },
     { href: "/process", label: t("footer.navigation.process") },
     { href: "/about", label: t("footer.navigation.about") },
     { href: "/contact", label: t("footer.navigation.contact") },
   ];
 
-  const serviceLinks = [
-    { href: "/services/management", label: t("footer.services.management") },
-    { href: "/services/web", label: t("footer.services.web") },
-    { href: "/services/automation", label: t("footer.services.automation") },
-    { href: "/services/crm", label: t("footer.services.crm") },
-    { href: "/services/marketing", label: t("footer.services.marketing") },
-    { href: "/services/hosting", label: t("footer.services.hosting") },
-  ];
-
   return (
     <footer className="bg-charcoal text-white safe-area-inset-bottom" role="contentinfo">
-      <div className="max-w-[1280px] mx-auto px-6 py-16 md:py-24">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12">
-          <div className="col-span-2 lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-6" aria-label={t("footer.brand") + " - Accueil"}>
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 py-12 md:py-16 lg:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8 lg:gap-12">
+          <div className="col-span-1 md:col-span-2 lg:col-span-2">
+            <Link href="/" className="flex items-center gap-3 mb-4 md:mb-6" aria-label={t("footer.brand") + " - Accueil"}>
               <img
                 src="/logo.png"
                 alt={t("footer.brand")}
-                className="h-32 w-auto"
+                className="h-24 md:h-32 w-auto"
               />
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-8">{t("footer.tagline")}</p>
-            <div className="flex items-center gap-4">
+            <p className="text-white/60 text-sm md:text-base leading-relaxed max-w-xs md:max-w-sm mb-6 md:mb-8">{t("footer.tagline")}</p>
+            <div className="flex flex-wrap items-center gap-2 md:gap-4">
               {locales.map((l) => (
                 <Link
                   key={l}
@@ -60,36 +50,20 @@ export function Footer({ locale }: FooterProps) {
                   aria-current={l === locale ? "page" : undefined}
                 >
                   <span>{localeFlags[l]}</span>
-                  <span>{localeNames[l]}</span>
+                  <span className="hidden sm:inline">{localeNames[l]}</span>
                 </Link>
               ))}
             </div>
           </div>
 
           <nav aria-labelledby="nav-heading">
-            <h3 id="nav-heading" className="text-sm font-semibold uppercase tracking-wider mb-4">{t("footer.navigation.title")}</h3>
-            <ul className="space-y-3">
+            <h3 id="nav-heading" className="text-sm font-semibold uppercase tracking-wider mb-3 md:mb-4">{t("footer.navigation.title")}</h3>
+            <ul className="space-y-2 md:space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={`/${locale}${link.href}`}
-                    className="text-white/70 hover:text-white text-sm transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <nav aria-labelledby="services-heading">
-            <h3 id="services-heading" className="text-sm font-semibold uppercase tracking-wider mb-4">{t("footer.services.title")}</h3>
-            <ul className="space-y-3">
-              {serviceLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={`/${locale}${link.href}`}
-                    className="text-white/70 hover:text-white text-sm transition-colors"
+                    className="text-white/70 hover:text-white text-sm transition-colors min-h-[44px] flex items-center"
                   >
                     {link.label}
                   </Link>
@@ -99,16 +73,16 @@ export function Footer({ locale }: FooterProps) {
           </nav>
 
           <address aria-labelledby="contact-heading" style={{ fontStyle: "normal" }}>
-            <h3 id="contact-heading" className="text-sm font-semibold uppercase tracking-wider mb-4">{t("footer.contact.title")}</h3>
-            <ul className="space-y-3 text-white/70 text-sm">
+            <h3 id="contact-heading" className="text-sm font-semibold uppercase tracking-wider mb-3 md:mb-4">{t("footer.contact.title")}</h3>
+            <ul className="space-y-2 md:space-y-3 text-white/70 text-sm">
               <li>{t("footer.contact.address")}</li>
               <li>
-                <a href={`tel:${t("footer.contact.phone").replace(/\s/g, "")}`} className="hover:text-white transition-colors">
+                <a href={`tel:${t("footer.contact.phone").replace(/\s/g, "")}`} className="hover:text-white transition-colors min-h-[44px] flex items-center">
                   {t("footer.contact.phone")}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${t("footer.contact.email")}`} className="hover:text-white transition-colors">
+                <a href={`mailto:${t("footer.contact.email")}`} className="hover:text-white transition-colors min-h-[44px] flex items-center">
                   {t("footer.contact.email")}
                 </a>
               </li>
@@ -117,13 +91,13 @@ export function Footer({ locale }: FooterProps) {
           </address>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-sm">{t("footer.copyright")}</p>
-          <div className="flex items-center gap-6">
-            <Link href="/legal/privacy" className="text-white/50 hover:text-white text-sm transition-colors">
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/10 flex flex-col items-center md:flex-row items-center justify-between gap-4">
+          <p className="text-white/40 text-sm text-center md:text-left">{t("footer.copyright")}</p>
+          <div className="flex items-center gap-4 md:gap-6">
+            <Link href="/services/privacy" className="text-white/50 hover:text-white text-sm transition-colors min-h-[44px] flex items-center">
               {t("footer.legal.privacy")}
             </Link>
-            <Link href="/legal/terms" className="text-white/50 hover:text-white text-sm transition-colors">
+            <Link href="/services/terms" className="text-white/50 hover:text-white text-sm transition-colors min-h-[44px] flex items-center">
               {t("footer.legal.terms")}
             </Link>
           </div>

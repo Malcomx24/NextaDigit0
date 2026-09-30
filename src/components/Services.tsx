@@ -60,8 +60,8 @@ export function Services({ locale }: ServicesProps) {
         </div>
 
         <div className="space-y-12 md:space-y-16">
-          <article className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-            <div className="flex flex-col gap-4">
+          <article className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-start">
+            <div className="flex flex-col gap-4 order-2 lg:order-1">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-accent-green/10 text-accent-green text-sm font-semibold rounded-full w-fit">
                 <span className="text-2xl font-bold">{featured.number}</span>
               </span>
@@ -76,18 +76,18 @@ export function Services({ locale }: ServicesProps) {
                 ))}
               </ul>
             </div>
-            <div className="bg-white rounded-xl border border-border p-6 md:p-8 shadow-sm">
-              <div className="grid grid-cols-2 gap-4">
+            <div className="bg-white rounded-xl border border-border p-4 md:p-6 md:p-8 shadow-sm order-1 lg:order-2">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
                 {[
                   { label: "Réservations", value: "24", subtitle: "cette semaine" },
                   { label: "Clients actifs", value: "156", subtitle: "total" },
                   { label: "Véhicules", value: "18", subtitle: "en flotte" },
                   { label: "CA mensuel", value: "48.7K", subtitle: "DH" },
                 ].map((stat, i) => (
-                  <div key={i} className="p-4 bg-light-bg rounded-lg">
-                    <p className="text-xs font-medium text-secondary-text uppercase tracking-wide">{stat.label}</p>
-                    <p className="text-2xl md:text-3xl font-bold text-charcoal mt-1">{stat.value}</p>
-                    <p className="text-xs text-secondary-text">{stat.subtitle}</p>
+                  <div key={i} className="p-3 md:p-4 bg-light-bg rounded-lg">
+                    <p className="text-[10px] md:text-xs font-medium text-secondary-text uppercase tracking-wide">{stat.label}</p>
+                    <p className="text-xl md:text-2xl md:text-3xl font-bold text-charcoal mt-1">{stat.value}</p>
+                    <p className="text-[10px] md:text-xs text-secondary-text">{stat.subtitle}</p>
                   </div>
                 ))}
               </div>
@@ -95,9 +95,9 @@ export function Services({ locale }: ServicesProps) {
           </article>
 
           <div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {servicesList.map((service, i) => (
-                <article key={i} className="group bg-white rounded-xl border border-border p-6 hover:border-accent-green/30 hover:shadow-lg transition-all duration-300">
+                <article key={i} className="group bg-white rounded-xl border border-border p-4 md:p-6 hover:border-accent-green/30 hover:shadow-lg transition-all duration-300">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-light-mint text-accent-green">
                       {serviceIcons[service.icon]}
